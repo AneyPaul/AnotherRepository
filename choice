@@ -1,0 +1,26 @@
+echo The first argument is $1
+echo The second argument is $2
+echo The third argument is $3
+
+echo \$ $$ PID of the script
+echo \# $# count arguments
+echo \? $? last return code
+echo \* $* all the arguments
+
+
+function greetings {
+echo Hello World!
+echo and hello to $USER to!
+}
+echo We will now call a function
+greetings
+echo The end
+
+
+function plus {
+let result="$1 + $2"
+echo $1 + $2 = $result
+}
+plus 3 10
+plus 20 13
+plus 20 22
